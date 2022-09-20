@@ -1,0 +1,20 @@
+.witness {
+  margin-top: 50px;
+}
+.witness-header {
+  display: flex;
+  justify-content: space-between;
+}
+.branch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signature {
+  display: flex;
+  justify-content: space-between;
+}
+.forms {
+  border: 1px solid black;
+  padding: 20px;
+}
