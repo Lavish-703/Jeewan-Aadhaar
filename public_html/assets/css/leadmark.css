@@ -12026,7 +12026,8 @@ textarea.form-control {
 
 .section.has-img-bg {
   position: relative;
-  background: url(../imgs/section.jpg) no-repeat center top fixed;
+  /* background: url(../imgs/section.jpg) no-repeat center top fixed; */
+  background: url(../imgs/footer-bg.jpeg) no-repeat center top fixed;
   background-size: cover;
   color: #fff;
 }
@@ -12043,7 +12044,7 @@ textarea.form-control {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 

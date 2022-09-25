@@ -18,3 +18,14 @@
   border: 1px solid black;
   padding: 20px;
 }
+.form-btn {
+  border-color: #18c0ed;
+  color: #18c0ed;
+  font-size: 20px;
+  font-weight: 500;
+}
+.form-btn:hover {
+  background-color: #18c0ed;
+  color: white;
+  border-color: #18c0ed;
+}
