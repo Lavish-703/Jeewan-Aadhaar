@@ -14,6 +14,54 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <nav
+      class="navbar custom-navbar navbar-expand-md navbar-light fixed-top"
+      data-spy="affix"
+      data-offset-top="-10"
+    >
+      <div class="container">
+        <a class="navbar-brand logo-text" href="#">
+          <!-- <img src="assets/imgs/logo.svg" alt=""> -->
+          Jeewan Aadhaar
+        </a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="ml-4 nav-link btn btn-primary btn-sm rounded"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <section class="witness">
       <div class="container">
         <form class="forms" action="">
@@ -37,7 +85,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="form-body">
             I, Shri/Smt <input type="text" /> S/o W/o D/o
             <input type="text" /> aged
             <input type="number" name="" id="" /> resident village
@@ -49,37 +97,60 @@
 
           <div class="classification">
             <h5>Classification of Client:</h5>
-            <input type="radio" name="client" id="rural" />
-            <label for="">Rural</label>
-            <input type="radio" name="client" id="urban" />
-            <label for="">Urban</label>
-            <input type="radio" name="client" id="urban" />
-            <label for="">Semiurban</label>
+            <div class="d-flex radio">
+              <div class="mx-2">
+                <input type="radio" name="client" id="rural" />
+                <label for="">Rural</label>
+              </div>
+              <div class="mx-2">
+                <input type="radio" name="client" id="urban" />
+                <label for="">Urban</label>
+              </div>
+              <div class="mx-2">
+                <input type="radio" name="client" id="urban" />
+                <label for="">Semiurban</label>
+              </div>
+            </div>
           </div>
+
           <div class="farm">
             <h5>Farm:</h5>
-            <input type="radio" name="farm" id="crop" />
-            <label for="">Crop</label>
-            <input type="radio" name="farm" id="dairy" />
-            <label for="">Dairy</label>
+            <div class="d-flex radio">
+              <div class="mx-2">
+                <input type="radio" name="farm" id="crop" />
+                <label for="">Crop</label>
+              </div>
+              <div class="mx-2">
+                <input type="radio" name="farm" id="dairy" />
+                <label for="">Dairy</label>
+              </div>
+            </div>
           </div>
           <div class="non-farm">
             <h5>Non-Farm:</h5>
-            <input type="radio" name="non-farm" id="crop" />
-            <label for="">Shop</label>
-            <input type="radio" name="non-farm" id="dairy" />
-            <label for="">Manufacturing</label>
-            <label for="">Other</label>
-            <input type="text" name="" id="" />
+            <div class="d-flex radio">
+              <div class="mx-2">
+                <input type="radio" name="non-farm" id="crop" />
+                <label for="">Shop</label>
+              </div>
+              <div class="mx-2">
+                <input type="radio" name="non-farm" id="dairy" />
+                <label for="">Manufacturing</label>
+              </div>
+              <div class="mx-2">
+                <label for="">Other</label>
+                <input type="text" name="" id="" />
+              </div>
+            </div>
           </div>
 
-          <div>
+          <div class="mtb-10">
             <h5>I furnished the following particulars</h5>
             <label for="">Residential Address</label>
             <input type="text" name="" id="" />
           </div>
 
-          <div class="terms">
+          <div class="terms mtb-10">
             <h3>Terms and Conditions</h3>
             <div class="row">
               <div class="col-sm-6">
@@ -90,43 +161,48 @@
                 <label for="">Disbursal Date: </label>
                 <input type="date" name="" id="" />
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 mtb-10">
                 <label for="">Loan Duration: </label>
                 <input type="number" name="" id="" />
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 mtb-10">
                 <label for="">Loan Processing Fee: </label>
                 <input type="number" name="" id="" />
               </div>
             </div>
 
-            <input type="checkbox" name="" id="" />
-            <label for=""
-              >I have been explained in detail, all the terms and conditions,
-              calculation of loan interest as wll as the related charges in my
-              vernacular language and I have understood the same.</label
-            >
-            <input type="checkbox" name="" id="" />
-            <label for=""
-              >I agree to all the terms & conditions related to the loan and
-              also agree to pay the associated charges.</label
-            >
+            <div class="d-flex align-items-baseline mtb-10">
+              <input type="checkbox" name="" id="" class="mr-1" />
+              <label for=""
+                >I have been explained in detail, all the terms and conditions,
+                calculation of loan interest as wll as the related charges in my
+                vernacular language and I have understood the same.</label
+              >
+            </div>
+
+            <div class="d-flex align-items-baseline mtb-10">
+              <input type="checkbox" name="" id="" class="mr-1" />
+              <label for=""
+                >I agree to all the terms & conditions related to the loan and
+                also agree to pay the associated charges.</label
+              >
+            </div>
           </div>
 
           <div class="row">
             <div class="col-sm-6">
               <input type="file" name="" id="" />
-              <h5>Spouse Signature</h5>
+              <h5 class="mtb-10">Spouse Signature</h5>
             </div>
             <div class="col-sm-6">
               <input type="file" name="" id="" />
-              <h5>Applicant's Signature</h5>
+              <h5 class="mtb-10">Applicant's Signature</h5>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mtb-10">
               <label for="">Date: </label>
               <input type="date" name="" id="" />
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mtb-10">
               <label for="">Date: </label>
               <input type="date" name="" id="" />
             </div>
